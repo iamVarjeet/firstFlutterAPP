@@ -1,22 +1,18 @@
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
+import 'package:markeeter_app/Screens/login_page.dart';
 
 void main() {
-  runApp(const Myapp());
+  runApp(MyApp());
 }
 
-class Myapp extends StatelessWidget {
-  const Myapp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget { 
   @override
   Widget build(BuildContext context) {
+   
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Hello There"),
-          ),
-        ),
-      ),
+      home:  FirstPage()
     );
   }
 }
